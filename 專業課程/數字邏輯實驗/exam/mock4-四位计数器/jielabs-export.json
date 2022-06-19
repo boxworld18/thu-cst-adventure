@@ -1,0 +1,147 @@
+{
+  "redux": {
+    "top": "top",
+    "signals": {
+      "clk": 3,
+      "output4": 15,
+      "output3[3]": 12,
+      "output2[3]": 8,
+      "output3[2]": 17,
+      "output1[3]": 4,
+      "output2[2]": 13,
+      "output3[1]": 6,
+      "output1[2]": 9,
+      "output2[1]": 18,
+      "output3[0]": 11,
+      "output1[1]": 14,
+      "output2[0]": 7,
+      "output1[0]": 19
+    },
+    "code": "LIBRARY IEEE;\nUSE IEEE.STD_LOGIC_1164.ALL;\nUSE IEEE.STD_LOGIC_ARITH.ALL;\nUSE IEEE.STD_LOGIC_UNSIGNED.ALL;\nUSE IEEE.NUMERIC_STD.ALL;\n\nentity top is\n    port(\n        clk: in std_logic;\n        output1: buffer std_logic_vector(3 downto 0);\n        output2: buffer std_logic_vector(3 downto 0);\n        output3: buffer std_logic_vector(3 downto 0);\n        output4: buffer std_logic\n    );\nend top;\n\narchitecture bhv of top is\n    signal cnt: integer := 0;\n    signal is_start: integer := 0;\nbegin\n    process(clk)\n        variable tmp1: std_logic_vector(3 downto 0);\n        variable tmp2: std_logic_vector(3 downto 0);\n        variable tmp3: std_logic_vector(3 downto 0);\n    begin\n        tmp1 := output1;\n        tmp2 := output2;\n        tmp3 := output3;\n        if (clk = '1' and clk'event) then\n            if (cnt = 10000) then\n                if (is_start = 0 and tmp1 = \"0000\" and tmp2 = \"0000\" and tmp3 = \"0000\") then\n                    output4 <= '1';\n                    output1 <= output1 + 1;\n                    is_start <= 1;\n                elsif (output4 = '0' and tmp3 = \"1000\" and tmp2 = \"0110\" and tmp1 = \"1001\") then\n                    \n                elsif (output1 = \"1001\") then\n                    output1 <= \"0000\";\n                    if (output2 = \"1001\") then\n                        output2 <= \"0000\";\n                        if (output3 = \"1001\") then\n                            output4 <= '0';\n                            output3 <= \"0000\";\n                        else\n                            output3 <= output3 + 1;\n                        end if;\n                    else\n                        output2 <= output2 + 1;\n                    end if;\n                else \n                    output1 <= output1 + 1;\n                end if;\n                cnt <= 0;\n            else\n                cnt <= cnt + 1;\n            end if;\n        end if;\n    end process;\nend bhv;",
+    "field": [
+      {
+        "type": "FPGA",
+        "x": 175,
+        "y": 0,
+        "id": "fpga",
+        "persistent": true
+      },
+      {
+        "type": "Digit4",
+        "id": "ad8c4f8e-7ca2-47fa-9b37-df31427016c4",
+        "x": 350,
+        "y": 175
+      },
+      {
+        "type": "Clock",
+        "id": "bdfb3d22-b652-42c1-8163-665139c5cb85",
+        "x": 350,
+        "y": 0
+      },
+      {
+        "type": "Digit7",
+        "id": "ba75e522-40fa-41d0-aa63-88593fa7bc95",
+        "x": 175,
+        "y": 175
+      },
+      {
+        "type": "Switch4",
+        "id": "f8bdd4d4-802f-4af0-979a-35d6aef652ee",
+        "x": 175,
+        "y": 350
+      }
+    ]
+  },
+  "sandbox": {
+    "groups": {
+      "533cf3b4-c6d5-4db2-94a9-e4ba81e68384": [
+        "fpga-3",
+        "bdfb3d22-b652-42c1-8163-665139c5cb85-1"
+      ],
+      "112a6b03-ef0a-42d5-9c3d-6819da749c5d": [
+        "fpga-4",
+        "ad8c4f8e-7ca2-47fa-9b37-df31427016c4-C-8"
+      ],
+      "990d54c0-2a39-4de4-9d9a-1557149a2a34": [
+        "fpga-9",
+        "ad8c4f8e-7ca2-47fa-9b37-df31427016c4-C-4"
+      ],
+      "2983c59e-faaf-4831-ab8f-cfd038096a94": [
+        "fpga-14",
+        "ad8c4f8e-7ca2-47fa-9b37-df31427016c4-C-2"
+      ],
+      "35a2f738-4dfd-4619-93a1-d69a01248947": [
+        "fpga-19",
+        "ad8c4f8e-7ca2-47fa-9b37-df31427016c4-C-1"
+      ],
+      "f04e817c-8317-4d48-aef6-72e6a0324eda": [
+        "ad8c4f8e-7ca2-47fa-9b37-df31427016c4-B-8",
+        "fpga-8"
+      ],
+      "29b243d1-b4c4-4dcd-85a7-694a33e8eabd": [
+        "fpga-13",
+        "ad8c4f8e-7ca2-47fa-9b37-df31427016c4-B-4"
+      ],
+      "4f748950-5c07-4355-90e5-f41bc3dca52d": [
+        "ad8c4f8e-7ca2-47fa-9b37-df31427016c4-B-2",
+        "fpga-18"
+      ],
+      "9bc53e4c-e2b2-47e4-86b4-2c2e6b93e0f8": [
+        "fpga-7",
+        "ad8c4f8e-7ca2-47fa-9b37-df31427016c4-B-1"
+      ],
+      "ecd88b9d-f6aa-499a-9a2d-8ca0d061b0e4": [
+        "fpga-12",
+        "ad8c4f8e-7ca2-47fa-9b37-df31427016c4-A-8"
+      ],
+      "f14cd023-6c4f-4d13-8671-bf46340228ce": [
+        "ad8c4f8e-7ca2-47fa-9b37-df31427016c4-A-4",
+        "fpga-17"
+      ],
+      "9e230beb-57e6-4350-9757-556f647cb697": [
+        "ad8c4f8e-7ca2-47fa-9b37-df31427016c4-A-2",
+        "fpga-6"
+      ],
+      "994eb317-6ff2-42a8-a6e1-1b1387bb0bcc": [
+        "ad8c4f8e-7ca2-47fa-9b37-df31427016c4-A-1",
+        "fpga-11"
+      ],
+      "d538bcba-8586-4030-82f6-3e5d7d7e3040": [
+        "f8bdd4d4-802f-4af0-979a-35d6aef652ee-switch-0",
+        "ba75e522-40fa-41d0-aa63-88593fa7bc95-C-G"
+      ],
+      "b09c68d2-f881-4670-bfaa-350ef8caf717": [
+        "ba75e522-40fa-41d0-aa63-88593fa7bc95-C-B",
+        "f8bdd4d4-802f-4af0-979a-35d6aef652ee-switch-3",
+        "ba75e522-40fa-41d0-aa63-88593fa7bc95-C-C"
+      ],
+      "f3ffb5f4-a72a-4da4-bd86-2f4f4781fe97": [
+        "fpga-15",
+        "ba75e522-40fa-41d0-aa63-88593fa7bc95-C-F",
+        "ba75e522-40fa-41d0-aa63-88593fa7bc95-C-E",
+        "ba75e522-40fa-41d0-aa63-88593fa7bc95-C-D",
+        "ba75e522-40fa-41d0-aa63-88593fa7bc95-C-A"
+      ]
+    },
+    "colors": {
+      "533cf3b4-c6d5-4db2-94a9-e4ba81e68384": "#f57c00",
+      "112a6b03-ef0a-42d5-9c3d-6819da749c5d": "#f57c00",
+      "990d54c0-2a39-4de4-9d9a-1557149a2a34": "#f57c00",
+      "2983c59e-faaf-4831-ab8f-cfd038096a94": "#f57c00",
+      "35a2f738-4dfd-4619-93a1-d69a01248947": "#f57c00",
+      "f04e817c-8317-4d48-aef6-72e6a0324eda": "#ffeb3b",
+      "29b243d1-b4c4-4dcd-85a7-694a33e8eabd": "#ffeb3b",
+      "4f748950-5c07-4355-90e5-f41bc3dca52d": "#ffeb3b",
+      "9bc53e4c-e2b2-47e4-86b4-2c2e6b93e0f8": "#ffeb3b",
+      "ecd88b9d-f6aa-499a-9a2d-8ca0d061b0e4": "#388e3c",
+      "f14cd023-6c4f-4d13-8671-bf46340228ce": "#388e3c",
+      "9e230beb-57e6-4350-9757-556f647cb697": "#388e3c",
+      "994eb317-6ff2-42a8-a6e1-1b1387bb0bcc": "#388e3c",
+      "d538bcba-8586-4030-82f6-3e5d7d7e3040": "#2196f3",
+      "b09c68d2-f881-4670-bfaa-350ef8caf717": "#2196f3",
+      "f3ffb5f4-a72a-4da4-bd86-2f4f4781fe97": "#2196f3"
+    },
+    "color": "#f44336"
+  },
+  "lang": "vhdl"
+}

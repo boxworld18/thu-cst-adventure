@@ -1,0 +1,73 @@
+{
+  "redux": {
+    "top": "top",
+    "signals": {
+      "rst": 0,
+      "clk": 15,
+      "cp": 3,
+      "led1": 4,
+      "led2": 9,
+      "led3": 14
+    },
+    "code": "LIBRARY IEEE;\nUSE IEEE.STD_LOGIC_1164.ALL;\nUSE IEEE.STD_LOGIC_ARITH.ALL;\nUSE IEEE.STD_LOGIC_UNSIGNED.ALL;\nUSE IEEE.NUMERIC_STD.ALL;\n\nentity top is\n    port(\n        rst, clk, cp: in std_logic;\n        led1, led2, led3: out std_logic\n    );\nend top;\n\narchitecture bhv of top is\n    signal cnt: integer := 0;\n    signal tar: integer := 2500000;\nbegin\n    process(rst, clk, cp)\n    begin\n        if (rst = '1') then\n            led1 <= '0';\n            led2 <= '0';\n            led3 <= '0';\n            cnt <= 0;\n        elsif (clk = '1') then\n            if (cnt < tar) then\n                led2 <= '1';\n                led3 <= '1';\n            elsif (cnt < tar + 500000) then\n                led2 <= '1';\n            else\n                led3 <= '1';\n            end if;\n        elsif (cp = '1' and cp'event) then\n            cnt <= cnt + 1;\n            if (cnt = tar) then\n                led1 <= '1';\n            end if;\n        end if;\n    end process;\nend bhv;",
+    "field": [
+      {
+        "type": "FPGA",
+        "x": 350,
+        "y": 0,
+        "id": "fpga",
+        "persistent": true
+      },
+      {
+        "type": "Clock",
+        "id": "30bbf47b-4cef-4134-9dce-95351551a710",
+        "x": 350,
+        "y": 175
+      },
+      {
+        "type": "Switch4",
+        "id": "d53df483-2f78-4c08-bff7-b0882d7df6b8",
+        "x": 525,
+        "y": 0
+      }
+    ]
+  },
+  "sandbox": {
+    "groups": {
+      "bf2f79d0-fd1e-43df-ae98-205e04392d2d": [
+        "fpga-3",
+        "30bbf47b-4cef-4134-9dce-95351551a710-1"
+      ],
+      "73048e21-800b-4458-a07d-d99838739756": [
+        "fpga-0",
+        "30bbf47b-4cef-4134-9dce-95351551a710-rst"
+      ],
+      "9c9916d1-343d-4732-9f68-009b2cd134ae": [
+        "30bbf47b-4cef-4134-9dce-95351551a710-clk",
+        "fpga-15"
+      ],
+      "cdb8baf6-0499-418d-8549-b7461a611ef7": [
+        "fpga-4",
+        "d53df483-2f78-4c08-bff7-b0882d7df6b8-led-0"
+      ],
+      "744fde76-58de-436c-9c16-a157e62759c6": [
+        "fpga-9",
+        "d53df483-2f78-4c08-bff7-b0882d7df6b8-led-1"
+      ],
+      "203fe88c-63c5-4179-b261-11c6980a50a4": [
+        "fpga-14",
+        "d53df483-2f78-4c08-bff7-b0882d7df6b8-led-2"
+      ]
+    },
+    "colors": {
+      "bf2f79d0-fd1e-43df-ae98-205e04392d2d": "#f57c00",
+      "73048e21-800b-4458-a07d-d99838739756": "#f57c00",
+      "9c9916d1-343d-4732-9f68-009b2cd134ae": "#f57c00",
+      "cdb8baf6-0499-418d-8549-b7461a611ef7": "#ffeb3b",
+      "744fde76-58de-436c-9c16-a157e62759c6": "#ffeb3b",
+      "203fe88c-63c5-4179-b261-11c6980a50a4": "#ffeb3b"
+    },
+    "color": "#ffeb3b"
+  },
+  "lang": "vhdl"
+}

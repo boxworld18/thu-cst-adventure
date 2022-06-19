@@ -1,0 +1,3 @@
+/Users/boxworld/Desktop/未命名資料夾/src/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/boxworld/Desktop/未命名資料夾/src/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/boxworld/Desktop/未命名資料夾/src/cmake-build-debug/CMakeFiles/Myplot.dir

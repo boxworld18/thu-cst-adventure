@@ -1,0 +1,121 @@
+{
+  "redux": {
+    "top": "top",
+    "signals": {
+      "clk": 9,
+      "mode": 14,
+      "pau": 19,
+      "output7[6]": 17,
+      "cp": 3,
+      "output7[5]": 6,
+      "output7[4]": 11,
+      "output7[3]": 16,
+      "output7[2]": 5,
+      "div": 8,
+      "output7[1]": 10,
+      "output7[0]": 15,
+      "rst": 0
+    },
+    "code": "LIBRARY IEEE;\nUSE IEEE.STD_LOGIC_1164.ALL;\nUSE IEEE.STD_LOGIC_ARITH.ALL;\nUSE IEEE.STD_LOGIC_UNSIGNED.ALL;\nUSE IEEE.NUMERIC_STD.ALL;\n\nentity top is\n    port(\n        rst, clk, pau, cp, mode: in std_logic;\n        output7: out std_logic_vector(6 downto 0);\n        div: buffer std_logic\n    );\nend top;\n\narchitecture bhv of top is\n    signal cnt: integer := 0;\n    signal cnt2: integer := 0;\n    signal time_cnt: std_logic_vector(3 downto 0) := \"0000\";\n    signal stop: integer := 0;\n    signal output: std_logic_vector(3 downto 0);\n    signal start: integer := 0;\nbegin\n\n    process(rst, cp, mode)\n    begin\n        if (rst = '1') then\n            if (mode = '1') then\n                output <= \"0101\";\n            elsif (mode = '0') then\n                output <= \"0011\";\n            end if;\n        elsif (cp = '1' and cp'event) then\n            if (cnt2 = 100000) then\n                if (div = '1') then\n                    div <= '0';\n                else \n                    div <= '1';\n                end if;\n                cnt2 <= 0;\n            else \n                cnt2 <= cnt2 + 1;\n            end if;\n\n            if (pau = '0' and clk = '1') then\n                if (cnt = 1000000) then\n                    if (output /= \"0000\") then\n                        output <= output - 1;\n                    end if;\n                    cnt <= 0;\n                elsif (stop = 0) then\n                    cnt <= cnt + 1;\n                end if;\n            end if;\n        end if;\n    end process;\n\n    process(output)\n    begin\n        case output is\n            when \"0000\" => output7 <= \"1111110\";\n            when \"0001\" => output7 <= \"0110000\";\n            when \"0010\" => output7 <= \"1101101\";\n            when \"0011\" => output7 <= \"1111001\";\n            when \"0100\" => output7 <= \"0110011\";\n            when \"0101\" => output7 <= \"1011011\";\n            when others => output7 <= \"0000000\";\n        end case;\n    end process;\nend bhv;",
+    "field": [
+      {
+        "type": "FPGA",
+        "x": 350,
+        "y": 0,
+        "id": "fpga",
+        "persistent": true
+      },
+      {
+        "type": "Switch4",
+        "id": "99c0e491-88a8-43cf-b7af-acb57eb09c28",
+        "x": 525,
+        "y": 175
+      },
+      {
+        "type": "Clock",
+        "id": "4bf4f993-147d-48ea-8d57-38cd198c4080",
+        "x": 350,
+        "y": 175
+      },
+      {
+        "type": "Digit7",
+        "id": "6aba05fb-83de-4c1a-b6d5-f46fbaab3b3b",
+        "x": 525,
+        "y": 0
+      }
+    ]
+  },
+  "sandbox": {
+    "groups": {
+      "a72aaebb-ad18-4225-bf93-271768545044": [
+        "fpga-3",
+        "4bf4f993-147d-48ea-8d57-38cd198c4080-1"
+      ],
+      "a24d0530-dbc1-42b2-bee8-30b6c59c5080": [
+        "fpga-0",
+        "4bf4f993-147d-48ea-8d57-38cd198c4080-rst"
+      ],
+      "6c53ac77-3abf-4447-bc6a-b1d6e2300235": [
+        "fpga-17",
+        "6aba05fb-83de-4c1a-b6d5-f46fbaab3b3b-A-A"
+      ],
+      "4ab5ebf6-54b7-4eef-ac29-dca9bb308bc6": [
+        "fpga-6",
+        "6aba05fb-83de-4c1a-b6d5-f46fbaab3b3b-A-B"
+      ],
+      "15551733-e531-4984-8d1e-bae7ce09b066": [
+        "6aba05fb-83de-4c1a-b6d5-f46fbaab3b3b-A-C",
+        "fpga-11"
+      ],
+      "3c47be54-6759-4ed8-9bf8-2ec6464fab0d": [
+        "fpga-16",
+        "6aba05fb-83de-4c1a-b6d5-f46fbaab3b3b-A-D"
+      ],
+      "bcbf4fe5-393d-4128-bc07-ab10a7e0b4b0": [
+        "6aba05fb-83de-4c1a-b6d5-f46fbaab3b3b-A-E",
+        "fpga-5"
+      ],
+      "644ba398-bd73-46a5-bbe3-587397b730e2": [
+        "6aba05fb-83de-4c1a-b6d5-f46fbaab3b3b-A-F",
+        "fpga-10"
+      ],
+      "d1353282-e32e-4986-ae35-764146e27561": [
+        "fpga-15",
+        "6aba05fb-83de-4c1a-b6d5-f46fbaab3b3b-A-G"
+      ],
+      "16b63486-5d19-4e02-9d21-3e3db0526a70": [
+        "99c0e491-88a8-43cf-b7af-acb57eb09c28-switch-0",
+        "fpga-14"
+      ],
+      "2ef6b694-cade-4c13-99f1-c1c003fa0ea1": [
+        "4bf4f993-147d-48ea-8d57-38cd198c4080-clk",
+        "fpga-19"
+      ],
+      "e7673a3d-46e4-4fe8-b6f8-e8d4b27f097c": [
+        "99c0e491-88a8-43cf-b7af-acb57eb09c28-switch-1",
+        "fpga-9"
+      ],
+      "c0210ead-96c7-406e-afbf-aa90570ec99f": [
+        "fpga-8",
+        "99c0e491-88a8-43cf-b7af-acb57eb09c28-led-0"
+      ]
+    },
+    "colors": {
+      "a72aaebb-ad18-4225-bf93-271768545044": "#f44336",
+      "a24d0530-dbc1-42b2-bee8-30b6c59c5080": "#f44336",
+      "6c53ac77-3abf-4447-bc6a-b1d6e2300235": "#f57c00",
+      "4ab5ebf6-54b7-4eef-ac29-dca9bb308bc6": "#f57c00",
+      "15551733-e531-4984-8d1e-bae7ce09b066": "#f57c00",
+      "3c47be54-6759-4ed8-9bf8-2ec6464fab0d": "#f57c00",
+      "bcbf4fe5-393d-4128-bc07-ab10a7e0b4b0": "#f57c00",
+      "644ba398-bd73-46a5-bbe3-587397b730e2": "#f57c00",
+      "d1353282-e32e-4986-ae35-764146e27561": "#f57c00",
+      "16b63486-5d19-4e02-9d21-3e3db0526a70": "#f44336",
+      "2ef6b694-cade-4c13-99f1-c1c003fa0ea1": "#f44336",
+      "e7673a3d-46e4-4fe8-b6f8-e8d4b27f097c": "#f44336",
+      "c0210ead-96c7-406e-afbf-aa90570ec99f": "#f44336"
+    },
+    "color": "#f44336"
+  },
+  "lang": "vhdl"
+}
