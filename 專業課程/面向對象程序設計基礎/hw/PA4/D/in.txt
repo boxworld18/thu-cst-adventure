@@ -1,0 +1,9 @@
+3 3 2
+x P
+y P
+z C 3.0
+a = x + y
+b = a + x
+a = x + z
+EVAL a 2 x 2.0 y 1.0
+EVAL b 2 x 2.0 y 1.0

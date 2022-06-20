@@ -1,0 +1,25 @@
+Example #1 is created
+--------main_function is ready--------
+Example #2 is created
+--------create_example is ready--------
+Example #3 is created
+Example #4 is created
+Example #5 is created
+Example #6 is created
+The data of Example #3 is 0
+The data of Example #4 is 1
+The data of Example #5 is 2
+Example #3 is destroyed
+Example #4 is destroyed
+Example #5 is destroyed
+The data of Example #6 is 2333
+--------create_example is over--------
+Example #7 is created
+The data of Example #1 is 23
+The data of Example #2 is 233
+The data of Example #7 is 23333
+--------main_function is over---------
+Example #7 is destroyed
+Example #2 is destroyed
+Example #6 is destroyed
+Example #1 is destroyed

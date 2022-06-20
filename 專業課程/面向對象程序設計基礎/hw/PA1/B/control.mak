@@ -1,0 +1,4 @@
+F1 = FALSE
+F2 = FALSE
+F3 = TRUE
+F4 = TRUE

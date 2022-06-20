@@ -1,0 +1,157 @@
+Q1 没有错误 
+---------------
+1  Test F(Test a){
+2      Test b = std::move(a);
+3      return b;
+4  }
+5  int main(){
+6      Test a;
+7      a = 1;
+8      Test A = F(a);
+9      return 0;
+10 }
+---------------
+* 构造函数:	6
+
+  > 默认构造:	1
+	L6	Test a;			构造 a()
+
+  > 有参构造:	1	
+	L7	a = 1;			构造 Test(1)
+
+  > 拷贝构造函数:	1
+	L1	Test F(Test a)		函数传参，拷贝构造 a
+
+  > 移动构造函数:	3
+	L2	Test b = std::move(a);	移动构造 b
+	L3	return b;		返回右值 b
+	L8	Test A = F(a);		移动构造 A
+
+* 赋值运算:	1
+
+  > 拷贝赋值函数:	0
+
+  > 移动赋值运算:	1
+	L7	a = 1;			赋 Test(1) 给 a
+
+-=-=-=-=-=-=-=-
+Q2 没有错误 
+---------------
+1  Test F(const Test& a){
+2      Test b = std::move(a);
+3      return b;
+4  }
+5  int main(){
+6      Test A = F(1);
+7      return 0;
+8  }
+---------------
+* 构造函数:	4
+
+  > 默认构造:	0
+
+  > 有参构造:	1
+	L6	Test A = F(1);		构造 Test(1) 并传入 F()
+
+  > 拷贝构造函数:	1
+	L2	Test b = std::move(a)	
+
+  > 移动构造函数:	2
+	L3	return b;		返回右值 b
+	L6	Test A = F(1);		移动构造 A
+	
+
+* 赋值运算:	0
+
+  > 拷贝赋值函数:	0
+
+  > 移动赋值运算:	0
+
+-=-=-=-=-=-=-=-
+Q3 没有错误 
+---------------
+1  Test F(Test &&a){
+2      Test b = std::move(a);
+3      return b;
+4  }
+5  int main(){
+6      Test A = F(1);
+7      return 0;
+8  }
+---------------
+* 构造函数:	4
+
+  > 默认构造:	0
+
+  > 有参构造:	1
+	L6	Test A = F(1);		构造 Test(1) 并传入 F()
+
+  > 拷贝构造函数:	0
+
+  > 移动构造函数:	3
+	L2	Test b = std::move(a);	a 移动构造 b
+	L3	return b;		返回右值 b
+	L6	Test A = F(1);		移动构造 A
+	
+
+* 赋值运算:	0
+
+  > 拷贝赋值函数:	0
+
+  > 移动赋值运算:	0
+
+-=-=-=-=-=-=-=-
+Q4 编译错误 
+---------------
+1  Test&& F(Test &a){
+2      Test b = a;
+3      return std::move(b);
+4  }
+5  int main(){
+6      Test A = F(Test(1));
+7      return 0;
+8  }
+---------------
+* 错误原因:
+	L6	Test A = F(Test(1));	Test(1) 为右值，函数 F() 赋值时调用了 Test &a = Test(1)，左值引用不能绑定右值
+* 潜在风险:
+	L3	return std::move(b);	返回值为临时变量
+
+-=-=-=-=-=-=-=-
+Q5 潜在风险 
+---------------
+1  const Test& F(const Test& a){
+2      Test b = a;
+3      return Test(1);
+4  }
+5  int main() {
+6      Test a;
+7      const Test &A = F(std::move(a));
+8      return 0;
+9  }
+---------------
+* 潜在风险:
+	L3	return Test(1);		返回值为临时变量
+	
+---------------
+* 构造函数:	3
+
+  > 默认构造:	1
+	L6	Test A			构造 A
+
+  > 有参构造:	1
+	L3	return Test(1);		构造 Test(1)
+
+  > 拷贝构造函数:	1
+	L2	Test b = a;		拷贝构造 b
+
+  > 移动构造函数:	0
+	
+
+* 赋值运算:	0
+
+  > 拷贝赋值函数:	0
+
+  > 移动赋值运算:	0
+
+-=-=-=-=-=-=-=-
