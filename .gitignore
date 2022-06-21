@@ -4,3 +4,6 @@
 # 過濾所有名為 raw, img 的文件
 /**/raw
 /**/img
+
+# 去除 npm modules
+/**/node_modules

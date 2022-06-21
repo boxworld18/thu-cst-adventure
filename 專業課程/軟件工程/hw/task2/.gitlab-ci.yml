@@ -1,0 +1,19 @@
+style-test:
+  image: python:3.8.5
+  stage: test
+
+  before_script:
+    - pip install -i https://pypi.tuna.tsinghua.edu.cn/simple pylint
+  script:
+    - pylint add.py main.py
+    - PYLINT_RET=$?
+    - exit $PYLINT_RET
+
+correctness-test:
+  image: python:3.8.5
+  stage: test
+
+  before_script:
+    - pip install -i https://pypi.tuna.tsinghua.edu.cn/simple pytest
+  script:
+    - pytest test.py
