@@ -1,0 +1,31 @@
+expname = Car1
+basedir = ./logs
+datadir = ./data/nerf_synthetic/Car
+dataset_type = blender
+
+no_batching = True
+
+use_viewdirs = True
+white_bkgd = True
+lrate_decay = 500
+
+N_samples = 64
+N_importance = 128
+N_rand = 1024
+
+precrop_iters = 0
+precrop_frac = 0.5
+
+testskip = 1
+half_res = False
+
+near = 2
+far = 3
+
+no_reload = False
+ft_path = ./model/car_238648.tar
+
+chunk = 32768
+netchunk = 262144
+
+render_only = True

@@ -1,0 +1,6 @@
+/Users/boxworld/Desktop/Assignment/40240422 計算機圖形學基礎/hw/PA2/容逸朗-2020010869-PA2/code/build/CMakeFiles/PA2.dir
+/Users/boxworld/Desktop/Assignment/40240422 計算機圖形學基礎/hw/PA2/容逸朗-2020010869-PA2/code/build/CMakeFiles/edit_cache.dir
+/Users/boxworld/Desktop/Assignment/40240422 計算機圖形學基礎/hw/PA2/容逸朗-2020010869-PA2/code/build/CMakeFiles/rebuild_cache.dir
+/Users/boxworld/Desktop/Assignment/40240422 計算機圖形學基礎/hw/PA2/容逸朗-2020010869-PA2/code/build/deps/vecmath/CMakeFiles/vecmath.dir
+/Users/boxworld/Desktop/Assignment/40240422 計算機圖形學基礎/hw/PA2/容逸朗-2020010869-PA2/code/build/deps/vecmath/CMakeFiles/edit_cache.dir
+/Users/boxworld/Desktop/Assignment/40240422 計算機圖形學基礎/hw/PA2/容逸朗-2020010869-PA2/code/build/deps/vecmath/CMakeFiles/rebuild_cache.dir

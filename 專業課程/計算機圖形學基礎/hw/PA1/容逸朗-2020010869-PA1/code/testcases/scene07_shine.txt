@@ -1,0 +1,122 @@
+
+PerspectiveCamera {
+    center 0 0 10 
+    direction 0 0 -1  
+    up 0 1 0
+    angle 35
+    width 200
+    height 200
+}
+
+Lights {
+    numLights 1
+    DirectionalLight {
+        direction -0.5 -0.5 -0.5
+        color 0.9 0.9 0.9
+    }
+}
+
+Materials {
+    numMaterials 9
+    PhongMaterial {
+        diffuseColor 0.1 0.4 0.1
+	specularColor 0 0 0 
+	shininess 1
+    }
+    PhongMaterial {
+        diffuseColor 0.1 0.4 0.1
+	specularColor 0.6 0.6 0.6
+	shininess 1
+    }
+    PhongMaterial {
+        diffuseColor 0.1 0.4 0.1
+	specularColor 0.6 0.6 0.6
+	shininess 2
+    }
+
+    PhongMaterial {
+        diffuseColor 0.1 0.4 0.1
+	specularColor 0.6 0.6 0.6
+	shininess 4
+    }
+    PhongMaterial {
+        diffuseColor 0.1 0.4 0.1
+	specularColor 0.6 0.6 0.6
+	shininess 8
+    }
+    PhongMaterial {
+        diffuseColor 0.1 0.4 0.1
+	specularColor 0.6 0.6 0.6
+	shininess 16
+    }
+
+    PhongMaterial {
+        diffuseColor 0.1 0.4 0.1
+	specularColor 0.6 0.6 0.6
+	shininess 32
+    }
+    PhongMaterial {
+        diffuseColor 0.1 0.4 0.1
+	specularColor 0.6 0.6 0.6
+	shininess 64
+    }
+    PhongMaterial {
+        diffuseColor 0.1 0.4 0.1
+	specularColor 0.6 0.6 0.6
+	shininess 128
+    }
+}
+
+Background {
+    color 0 0 0 
+}
+
+Group {
+    numObjects 9
+    MaterialIndex 0
+    Sphere {
+	center -2 2 0 
+        radius 0.9 
+    }
+    MaterialIndex 1
+    Sphere {
+	center 0 2 0 
+        radius 0.9 
+    }
+    MaterialIndex 2
+    Sphere {
+	center 2 2 0 
+        radius 0.9 
+    }
+    MaterialIndex 3
+    Sphere {
+	center -2 0 0 
+        radius 0.9 
+    }
+    MaterialIndex 4
+    Sphere {
+	center 0 0 0 
+        radius 0.9 
+    }
+    MaterialIndex 5
+    Sphere {
+	center 2 0 0 
+        radius 0.9 
+    }
+    MaterialIndex 6
+    Sphere {
+	center -2 -2 0 
+        radius 0.9 
+    }
+    MaterialIndex 7
+    Sphere {
+	center 0 -2 0 
+        radius 0.9 
+    }
+    MaterialIndex 8
+    Sphere {
+	center 2 -2 0 
+        radius 0.9 
+    }
+}
+

@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc libvecmath.a CMakeFiles/vecmath.dir/src/Matrix2f.cpp.o CMakeFiles/vecmath.dir/src/Matrix3f.cpp.o CMakeFiles/vecmath.dir/src/Matrix4f.cpp.o CMakeFiles/vecmath.dir/src/Quat4f.cpp.o CMakeFiles/vecmath.dir/src/Vector2f.cpp.o CMakeFiles/vecmath.dir/src/Vector3f.cpp.o CMakeFiles/vecmath.dir/src/Vector4f.cpp.o CMakeFiles/vecmath.dir/src/vecio.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib libvecmath.a

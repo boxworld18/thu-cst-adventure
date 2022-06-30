@@ -1,0 +1,48 @@
+
+PerspectiveCamera {
+    center 0 0.8 5
+    direction 0 0 -1
+    up 0 1 0
+    angle 30
+    width 200
+    height 200
+}
+
+Lights {
+    numLights 2
+    DirectionalLight {
+        direction -0.5 -0.5 -1
+        color 0.5 0.5 0.5 
+    }
+    PointLight {
+      position 0 5 5
+      color 0.8 0.8 0.4
+    }
+}
+
+Background {
+    color 0.1 0.2 0.7
+}
+
+Materials {
+    numMaterials 1
+    PhongMaterial { 
+	  diffuseColor 0.4 0.4 0.4 
+	  specularColor 0.7 0.7 0.7
+	  shininess 20
+	}
+	
+}
+
+Group {
+    numObjects 1
+    MaterialIndex 0
+    Transform {
+		Scale  5 5 5 
+		Translate  0.03 -0.0666 0 	
+        TriangleMesh {
+            obj_file mesh/bunny_1k.obj
+        }
+    }
+}
+

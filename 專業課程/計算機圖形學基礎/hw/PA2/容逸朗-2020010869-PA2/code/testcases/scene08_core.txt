@@ -1,0 +1,54 @@
+
+PerspectiveCamera {
+    center 0 0 10
+    direction 0 0 -1
+    up 0 1 0
+    angle 45
+    width 400
+    height 400
+}
+
+Lights {
+    numLights 1
+    PointLight {
+        position 0.0 5 5
+        color 0.9 0.9 0.9
+    }
+}
+
+Background {
+    color 0 0 0
+}
+
+Group {
+    numObjects 4
+    BezierCurve {
+        controls
+            [ 3 0 0 ]
+            [ 3 1 0 ]
+            [ 1 1 0 ]
+            [ 1 0 0 ]
+    }
+    BsplineCurve {
+        controls
+            [ -1 0 0 ]
+            [ -1 1 0 ]
+            [ -3 1 0 ]
+            [ -3 0 0 ]
+    }
+    BezierCurve {
+        controls
+            [ -1 -2 0 ]
+            [ 0 -1 1 ]
+            [ 0 1 -1 ]
+            [ 1 -2 0 ]
+    }
+    BsplineCurve {
+        controls
+            [ -2 0 1 ]
+            [ 0 2 1 ]
+            [ 0 3 -1 ]
+            [ 2 0 -1 ]
+    }
+}
+
