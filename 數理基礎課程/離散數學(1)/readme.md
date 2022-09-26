@@ -13,7 +13,7 @@
 ## 參考書
 
 * [数理逻辑与集合论(第2版)](http://reserves.lib.tsinghua.edu.cn/Search/BookDetail?bookId=5374590a-f628-4dee-9fd7-58c232f3240d)，石纯一等，清华大学出版社。
-* [数理逻辑与集合论(第2版)精要与题解]()，石纯一等，清华大学出版社。
+* [数理逻辑与集合论(第2版)精要与题解](https://github.com/boxworld18/thu-cst-adventure/blob/main/%E6%95%B8%E7%90%86%E5%9F%BA%E7%A4%8E%E8%AA%B2%E7%A8%8B/%E9%9B%A2%E6%95%A3%E6%95%B8%E5%AD%B8(1)/textbook/%E6%95%B0%E7%90%86%E9%80%BB%E8%BE%91%E4%B8%8E%E9%9B%86%E5%90%88%E8%AE%BA%E7%B2%BE%E8%A6%81%E4%B8%8E%E9%A2%98%E8%A7%A3.pdf)，石纯一等，清华大学出版社。
 
 ## 心得
 
