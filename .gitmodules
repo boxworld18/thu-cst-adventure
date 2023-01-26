@@ -10,12 +10,12 @@
 [submodule "專業課程/計算機圖形學基礎/hw/project/brender-project"]
 	path = 專業課程/計算機圖形學基礎/hw/project/brender-project
 	url = https://github.com/boxworld18/jittor-brender
-[submodule "專業課程/軟件工程/project/backend"]
-	path = 專業課程/軟件工程/project/backend
+[submodule "專業課程/軟件工程/project/src/backend"]
+	path = 專業課程/軟件工程/project/src/backend
 	url = https://github.com/boxworld18/dianasearch-system
-[submodule "專業課程/軟件工程/project/op-platform"]
-	path = 專業課程/軟件工程/project/op-platform
+[submodule "專業課程/軟件工程/project/src/op-platform"]
+	path = 專業課程/軟件工程/project/src/op-platform
 	url = https://github.com/boxworld18/dianasearch-platform
-[submodule "專業課程/軟件工程/project/searchpage"]
-	path = 專業課程/軟件工程/project/searchpage
+[submodule "專業課程/軟件工程/project/src/searchpage"]
+	path = 專業課程/軟件工程/project/src/searchpage
 	url = https://github.com/boxworld18/dianasearch-searchpage
