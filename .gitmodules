@@ -7,3 +7,6 @@
 [submodule "專業課程/人工智能導論/hw/hw3/project"]
 	path = 專業課程/人工智能導論/hw/hw3/project
 	url = https://github.com/boxworld18/connect4
+[submodule "專業課程/計算機圖形學基礎/hw/project/brender-project"]
+	path = 專業課程/計算機圖形學基礎/hw/project/brender-project
+	url = https://github.com/boxworld18/jittor-brender
