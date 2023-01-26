@@ -24,11 +24,3 @@
 ### 大作業
 
 沒有什麼好說的，邊做邊學就好了。
-
-
-
-## 補充資料
-
-軍棋小遊戲：[前往倉庫](https://github.com/boxworld18/pt-milichess)
-
-新聞 App：[前往倉庫](https://github.com/boxworld18/pt-boxnews)

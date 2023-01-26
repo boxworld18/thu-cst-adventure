@@ -19,3 +19,9 @@
 [submodule "專業課程/軟件工程/project/src/searchpage"]
 	path = 專業課程/軟件工程/project/src/searchpage
 	url = https://github.com/boxworld18/dianasearch-searchpage
+[submodule "專業課程/程序設計訓練/milichess"]
+	path = 專業課程/程序設計訓練/milichess
+	url = https://github.com/boxworld18/milichess
+[submodule "專業課程/程序設計訓練/boxnews"]
+	path = 專業課程/程序設計訓練/boxnews
+	url = https://github.com/boxworld18/boxnews
