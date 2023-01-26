@@ -1,0 +1,9 @@
+[submodule "專業課程/人工智能導論/hw/hw1/project"]
+	path = 專業課程/人工智能導論/hw/hw1/project
+	url = https://github.com/boxworld18/pinyin-recognition
+[submodule "專業課程/人工智能導論/hw/hw2/project"]
+	path = 專業課程/人工智能導論/hw/hw2/project
+	url = https://github.com/boxworld18/sentiment-analysis
+[submodule "專業課程/人工智能導論/hw/hw3/project"]
+	path = 專業課程/人工智能導論/hw/hw3/project
+	url = https://github.com/boxworld18/connect4
