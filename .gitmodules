@@ -37,3 +37,6 @@
 [submodule "專業課程/計算機組成原理/lab/src/cpu"]
 	path = 專業課程/計算機組成原理/lab/src/cpu
 	url = https://github.com/boxworld18/thinpad-cpu
+[submodule "專業課程/計算機網絡原理/lab"]
+	path = 專業課程/計算機網絡原理/lab
+	url = https://github.com/boxworld18/router-lab
