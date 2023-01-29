@@ -25,3 +25,6 @@
 [submodule "專業課程/程序設計訓練/boxnews"]
 	path = 專業課程/程序設計訓練/boxnews
 	url = https://github.com/boxworld18/boxnews
+[submodule "專業課程/虛擬現實技術/hw/proj/src"]
+	path = 專業課程/虛擬現實技術/hw/proj/src
+	url = https://github.com/boxworld18/panoramic-image-stitching
