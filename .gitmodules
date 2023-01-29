@@ -40,3 +40,6 @@
 [submodule "專業課程/計算機網絡原理/lab"]
 	path = 專業課程/計算機網絡原理/lab
 	url = https://github.com/boxworld18/router-lab
+[submodule "數理基礎課程/離散數學(2)/lab"]
+	path = 數理基礎課程/離散數學(2)/lab
+	url = https://github.com/boxworld18/dm-code
