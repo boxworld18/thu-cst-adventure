@@ -28,6 +28,6 @@
 [submodule "專業課程/虛擬現實技術/hw/proj/src"]
 	path = 專業課程/虛擬現實技術/hw/proj/src
 	url = https://github.com/boxworld18/panoramic-image-stitching
-[submodule "專業課程/編譯原理/hw/proj/src"]
-	path = 專業課程/編譯原理/hw/proj/src
+[submodule "專業課程/編譯原理/hw/src"]
+	path = 專業課程/編譯原理/hw/src
 	url = https://github.com/boxworld18/minidecaf
