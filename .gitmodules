@@ -46,3 +46,6 @@
 [submodule "專業課程/編譯原理/lab/src"]
 	path = 專業課程/編譯原理/lab/src
 	url = https://github.com/boxworld18/minidecaf
+[submodule "專業課程/數據庫專題訓練/src"]
+	path = 專業課程/數據庫專題訓練/src
+	url = https://github.com/boxworld18/database
