@@ -1,4 +1,4 @@
-# 功課得分
+# 作業得分
 
 | 編號 | 得分 | 評語                           |
 | ---- | ---- | ------------------------------ |
@@ -17,5 +17,5 @@
 | hw13 | 9    | 3. f∩g是否是函數的情況沒說清楚 |
 | hw14 | 10   |                                |
 
-注：10分並不代表功課的內容完全正確，因此建議配合[題解書](https://github.com/boxworld18/thu-cst-adventure/blob/main/%E6%95%B8%E7%90%86%E5%9F%BA%E7%A4%8E%E8%AA%B2%E7%A8%8B/%E9%9B%A2%E6%95%A3%E6%95%B8%E5%AD%B8(1)/textbook/%E6%95%B0%E7%90%86%E9%80%BB%E8%BE%91%E4%B8%8E%E9%9B%86%E5%90%88%E8%AE%BA%E7%B2%BE%E8%A6%81%E4%B8%8E%E9%A2%98%E8%A7%A3.pdf)交叉對比。（因題解書也有錯誤）
+注：10 分並不代表功課的內容完全正確，因此建議配合[題解書](https://github.com/boxworld18/thu-cst-adventure/blob/main/%E6%95%B8%E7%90%86%E5%9F%BA%E7%A4%8E%E8%AA%B2%E7%A8%8B/%E9%9B%A2%E6%95%A3%E6%95%B8%E5%AD%B8(1)/textbook/%E6%95%B0%E7%90%86%E9%80%BB%E8%BE%91%E4%B8%8E%E9%9B%86%E5%90%88%E8%AE%BA%E7%B2%BE%E8%A6%81%E4%B8%8E%E9%A2%98%E8%A7%A3.pdf)交叉對比。（但請注意，題解書也是有錯誤的）
 
