@@ -49,3 +49,12 @@
 [submodule "專業課程/數據庫專題訓練/src"]
 	path = 專業課程/數據庫專題訓練/src
 	url = https://github.com/boxworld18/database
+[submodule "專業課程/高性能計算導論/hw/src/pa1"]
+	path = 專業課程/高性能計算導論/hw/src/pa1
+	url = https://github.com/boxworld18/mpi-odd-even-sort
+[submodule "專業課程/高性能計算導論/hw/src/pa2"]
+	path = 專業課程/高性能計算導論/hw/src/pa2
+	url = https://github.com/boxworld18/cuda-apsp
+[submodule "專業課程/高性能計算導論/hw/src/pa3"]
+	path = 專業課程/高性能計算導論/hw/src/pa3
+	url = https://github.com/boxworld18/cuda-spmm
