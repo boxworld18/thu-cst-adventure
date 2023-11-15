@@ -1,0 +1,11 @@
+-- static --
+Sort uniform parts: 68.3845 ms
+Sort random parts: 1414.37 ms
+
+-- dynamic --
+Sort uniform parts: 73.2568 ms
+Sort random parts: 1373.87 ms
+
+-- guided --
+Sort uniform parts: 68.1761 ms
+Sort random parts: 1452.47 ms

@@ -1,0 +1,103 @@
+Correct.
+MPI_Allreduce:   0.032437 ms.
+Naive_Allreduce: 0.036498 ms.
+Ring_Allreduce:  0.028017 ms.
+Correct.
+MPI_Allreduce:   3.61272 ms.
+Naive_Allreduce: 3.5662 ms.
+Ring_Allreduce:  3.49388 ms.
+Correct.
+MPI_Allreduce:   928.606 ms.
+Naive_Allreduce: 930.581 ms.
+Ring_Allreduce:  463.589 ms.
+
+Correct.
+MPI_Allreduce:   0.957494 ms.
+Naive_Allreduce: 1.88975 ms.
+Ring_Allreduce:  0.614788 ms.
+Correct.
+MPI_Allreduce:   41.2156 ms.
+Naive_Allreduce: 58.4814 ms.
+Ring_Allreduce:  32.4495 ms.
+Correct.
+MPI_Allreduce:   4080.69 ms.
+Naive_Allreduce: 6571.67 ms.
+Ring_Allreduce:  3365.52 ms.
+
+Correct.
+MPI_Allreduce:   0.817381 ms.
+Naive_Allreduce: 8.50503 ms.
+Ring_Allreduce:  0.677773 ms.
+Correct.
+MPI_Allreduce:   52.2498 ms.
+Naive_Allreduce: 68.4995 ms.
+Ring_Allreduce:  42.3224 ms.
+Correct.
+MPI_Allreduce:   5775.77 ms.
+Naive_Allreduce: 7193.14 ms.
+Ring_Allreduce:  5346.5 ms.
+
+Correct.
+MPI_Allreduce:   1.17186 ms.
+Naive_Allreduce: 3.84474 ms.
+Ring_Allreduce:  1.29839 ms.
+Correct.
+MPI_Allreduce:   148.692 ms.
+Naive_Allreduce: 132.214 ms.
+Ring_Allreduce:  101.063 ms.
+Correct.
+MPI_Allreduce:   11723.7 ms.
+Naive_Allreduce: 12463.1 ms.
+Ring_Allreduce:  12020.4 ms.
+
+Correct.
+MPI_Allreduce:   0.317486 ms.
+Naive_Allreduce: 0.446723 ms.
+Ring_Allreduce:  0.214491 ms.
+Correct.
+MPI_Allreduce:   13.6354 ms.
+Naive_Allreduce: 20.6378 ms.
+Ring_Allreduce:  9.35509 ms.
+Correct.
+MPI_Allreduce:   1830.09 ms.
+Naive_Allreduce: 2633.28 ms.
+Ring_Allreduce:  1047.68 ms.
+
+Correct.
+MPI_Allreduce:   1.15006 ms.
+Naive_Allreduce: 13.807 ms.
+Ring_Allreduce:  0.916153 ms.
+Correct.
+MPI_Allreduce:   49.8921 ms.
+Naive_Allreduce: 69.7773 ms.
+Ring_Allreduce:  41.1224 ms.
+Correct.
+MPI_Allreduce:   4776.41 ms.
+Naive_Allreduce: 7054.59 ms.
+Ring_Allreduce:  4591.8 ms.
+
+Correct.
+MPI_Allreduce:   1.93288 ms.
+Naive_Allreduce: 2.41345 ms.
+Ring_Allreduce:  1.65981 ms.
+Correct.
+MPI_Allreduce:   65.624 ms.
+Naive_Allreduce: 68.7127 ms.
+Ring_Allreduce:  53.5499 ms.
+Correct.
+MPI_Allreduce:   5900.24 ms.
+Naive_Allreduce: 8259.14 ms.
+Ring_Allreduce:  5770.66 ms.
+
+Correct.
+MPI_Allreduce:   1.80787 ms.
+Naive_Allreduce: 4.21147 ms.
+Ring_Allreduce:  2.10809 ms.
+Correct.
+MPI_Allreduce:   145.027 ms.
+Naive_Allreduce: 155.703 ms.
+Ring_Allreduce:  106.355 ms.
+Correct.
+MPI_Allreduce:   11868.5 ms.
+Naive_Allreduce: 12803.3 ms.
+Ring_Allreduce:  12187.2 ms.

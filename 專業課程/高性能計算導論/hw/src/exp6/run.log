@@ -1,0 +1,85 @@
+# Gmem
+stride:    1
+bandwidth: 530.02
+
+stride:    2
+bandwidth: 182.489
+
+stride:    4
+bandwidth: 91.9961
+
+stride:    8
+bandwidth: 46.2866
+
+# Smem
+bitwidth:  2
+stride:    1
+bandwidth: 4236.73
+
+bitwidth:  4
+stride:    1
+bandwidth: 8149.93
+
+bitwidth:  8
+stride:    1
+bandwidth: 8648.63
+
+bitwidth:  2
+stride:    2
+bandwidth: 4303
+
+bitwidth:  4
+stride:    2
+bandwidth: 4309.13
+
+bitwidth:  8
+stride:    2
+bandwidth: 4339.57
+
+bitwidth:  2
+stride:    4
+bandwidth: 2161.88
+
+bitwidth:  4
+stride:    4
+bandwidth: 2028.73
+
+bitwidth:  8
+stride:    4
+bandwidth: 2173.54
+
+bitwidth:  2
+stride:    8
+bandwidth: 829.905
+
+bitwidth:  4
+stride:    8
+bandwidth: 1012.96
+
+bitwidth:  8
+stride:    8
+bandwidth: 1087.65
+
+bitwidth:  2
+stride:    16
+bandwidth: 427.725
+
+bitwidth:  4
+stride:    16
+bandwidth: 504.418
+
+bitwidth:  8
+stride:    16
+bandwidth: 544.071
+
+bitwidth:  2
+stride:    32
+bandwidth: 214.939
+
+bitwidth:  4
+stride:    32
+bandwidth: 250.814
+
+bitwidth:  8
+stride:    32
+bandwidth: 544.07

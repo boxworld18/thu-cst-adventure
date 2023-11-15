@@ -1,0 +1,15 @@
+rm main
+icc main.cpp -o main -O3 -DUNROLL_N=1
+Elapsed time: 2.0883 seconds, performance: 15.6911 GFlops
+rm main
+icc main.cpp -o main -O3 -DUNROLL_N=2
+Elapsed time: 1.9347 seconds, performance: 16.9372 GFlops
+rm main
+icc main.cpp -o main -O3 -DUNROLL_N=4
+Elapsed time: 1.8017 seconds, performance: 18.1868 GFlops
+rm main
+icc main.cpp -o main -O3 -DUNROLL_N=8
+Elapsed time: 1.8150 seconds, performance: 18.0536 GFlops
+rm main
+icc main.cpp -o main -O3 -DUNROLL_N=16
+Elapsed time: 1.8244 seconds, performance: 17.9606 GFlops

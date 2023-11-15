@@ -1,0 +1,30 @@
+2020010869@conv0:~/exp8$ LD_PRELOAD=~/exp8/ipm/lib/libipm.so ./run.sh 2020010869
+##IPMv0.983####################################################################
+# 
+# command : unknown (completed)
+# host    : conv2/x86_64_Linux             mpi_tasks : 8 on 1 nodes
+# start   : 05/24/23/18:10:53              wallclock : 22.514979 sec
+# stop    : 05/24/23/18:11:15              %comm     : 139.69 
+# gbytes  : 0.00000e+00 total              gflop/sec : 0.00000e+00 total
+#
+##############################################################################
+# region  : *       [ntasks] =      8
+#
+#                           [total]         <avg>           min           max 
+# entries                          8             1             1             1
+# wallclock                  180.118       22.5148       22.5136        22.515
+# user                       178.845       22.3556       22.2448       22.3986
+# system                     5.08678      0.635847      0.598734      0.728156
+# mpi                        251.607       31.4508    0.00565549       36.5239
+# %comm                                    139.688     0.0251188       162.221
+# gflop/sec                        0             0             0             0
+# gbytes                           0             0             0             0
+#
+#
+#                            [time]       [calls]        <%mpi>      <%wall>
+# MPI_Barrier                251.606            16        100.00       139.69
+# MPI_Comm_size          0.000158118             8          0.00         0.00
+# MPI_Comm_rank          4.41633e-06             8          0.00         0.00
+###############################################################################
+IPM: 0 log IPMLOG_DIR  not available using $CWD 
+Sucesss 2020010869
