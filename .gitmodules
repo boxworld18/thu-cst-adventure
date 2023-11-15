@@ -58,3 +58,9 @@
 [submodule "專業課程/高性能計算導論/hw/src/pa3"]
 	path = 專業課程/高性能計算導論/hw/src/pa3
 	url = https://github.com/boxworld18/cuda-spmm
+[submodule "專業課程/計算機系統結構/lab/src/cache"]
+	path = 專業課程/計算機系統結構/lab/src/cache
+	url = https://github.com/boxworld18/cache
+[submodule "專業課程/計算機系統結構/lab/src/tomasulo"]
+	path = 專業課程/計算機系統結構/lab/src/tomasulo
+	url = https://github.com/boxworld18/tomasulo
