@@ -1,0 +1,12 @@
+====== RESULT ======
+Cand#   1:       11
+Cand#   2:        9
+Cand#   3:       15
+Cand#   4:        9
+Cand#   5:        7
+Cand#   6:        7
+Cand#   7:       12
+Cand#   8:       19
+Cand#   9:        5
+Cand#  10:        6
+====================
